@@ -56,5 +56,7 @@ The Problems i faced:
  
 	so this problem is't fixed but the y possion is clamped with the landing coordinate so the plane wont go bellow it.
 
+13. Skybox Problem:
+	Unfortunately skybox problem still exists and I couldn't solve it .
 
 
