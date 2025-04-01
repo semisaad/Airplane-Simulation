@@ -10,7 +10,8 @@ Airplane Simulation is a lightweight 3D flight simulation system that demonstrat
 - **Custom Models & Textures:** Includes a 3D airplane model and associated assets.
 - **Optimized Rendering:** Built to run efficiently with modern rendering techniques.
 
-## Installation
+### Demo GIF
+![Simulation in Action](Assets/demo.gif)
 
 ### Prerequisites
 
