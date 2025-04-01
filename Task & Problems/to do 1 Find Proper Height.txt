@@ -1,0 +1,18 @@
+to do:
+1. Find Proper Height Map (done)
+2. Sorting in Proper Directory (done)
+3. Audio for Plane (done)
+4. Adding fpp mode (done)
+5. Clamping The Plane (done)
+6. Collision Detection(land(done), terrain collision if needed(couldn't happend because of high calculation))
+7. Making a ruway for landing also slowing down.(done)
+8. Adding Gravity. (done)
+9. RayGui for Game Start scene (done)
+10. Add landed scene restart or exit (done)
+11. Add Radar to find landing spot (done)
+12. Add Big mark to find the landing spot and make it the landing detector (done) [it also is a safety air bag if planes fails to land it can hit it for less damage]
+
+13. Add skybox for the map 
+14. Upload to github
+
+** Making it presentable and Presentation Speech with All the feature of the project and Work went through it.

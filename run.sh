@@ -1,0 +1,2 @@
+make
+./my_project

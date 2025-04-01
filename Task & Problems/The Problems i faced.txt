@@ -1,0 +1,60 @@
+The Problems i faced:
+
+[all calculation related and function realated problem was solved by useing raylib fucntion sheet and chatgpt and example of other coders as for this type of projects since not much was on the internet ]
+[all the projects that where close to it was made with opengl and not raylib]
+[also other projects closer to it used other language such as cpp , c# and python where as this is strictly made with c]
+[it was made using raylib game library and not a game engine]
+
+1. Plane Rendered Perpendiculer to the map and not parrel
+	fix: fixed it by changing the matrix rotation correction and changing the value of pi in transY
+
+2. Plane's and Maps Size
+	fix: fixed it by scaling plane and changing the original trans Position;
+
+3. Plane's Movement:
+
+	1.Yaw , Pitch , Roll : 
+	fix: fixed it by looking for a solution in raylib model .
+
+	2. Moves only in TransZ and not in the direction its facing : 
+	fix : fixed it by changing the fixed transz increament to vector forward calculation of yaw 
+
+	3.plane moved centered to the origin of it's innitial spaw position :
+	fix: changing the rotation first and then translation int plane transform fixed issue and the plane started to yaw centered to its current location
+
+4. New map was really hard for my pc to run and crashed the game :
+	fix: made the map's height and width 1/3 of it;s original size to run it. 
+	
+5. Camera was moving rapidly and uncontrolabley While rolling
+	fix: fixed it by removing camera movement due to roll
+	
+6. Lack Of saturation in the map:
+	fix: fixed it by using some prebuild shader only for saturation
+
+7. Audio stream was having a slight delay while looping
+	fix: fixed it by taking a longer sound effect and by cropping some low volume sound from the end 
+
+8. While fpp the Camera didnt move due to roll:
+	fix: fixed it by using same movement method and transformation of thirdperson but added the roll in the transformation calculation
+
+9. Plane coundn't be clamped in the map:
+	fix: as the problem was mainly because of the coordinate issue i made an cordinate showing box and manully flied to map edges to find acctual size of the map it self it was 200k X 200k map by taking the measurements manually .
+
+10. The runway was not rendering at the desired location:
+	fix: fixed it by tweaking all the values of drawing (CAUTION: DONT CHANGE THE VALUE VERY PRECISE FLOATING POINT ANY DIFFERENCE MAY AFFECT THE RENDERING)
+
+11. Constantly forgetting where the runway is:
+	fix: fixed by making a radar and placing a big red spheare for better finding(the red sphear also works as landing detector)
+
+12. Collision with terrain:
+	there are 2 ways to fix this :
+
+	1. ray collision where by using raycollision detection function it generates a ray that reflects when contact to terrain and constantly calculates distance 
+	(used but heavy load calcutation , drastic performance drop was getting 10 fps)
+
+	2. precalculating the height and depth of the heightmap manually didn't get it how it's done
+ 
+	so this problem is't fixed but the y possion is clamped with the landing coordinate so the plane wont go bellow it.
+
+
+
